@@ -25,13 +25,31 @@ We don't do bug reviews. We don't judge code style. We map structural architectu
 In due diligence processes, handing over your proprietary source code is a massive friction point. 
 That's why **we don't need it.**
 
-This open-source script is designed to run LOCALLY on your machine. You can read `trace_extractor.py` (it is less than 100 lines). It uses Abstract Syntax Tree (AST) parsing to:
+This open-source script is designed to run LOCALLY on your machine. You can read `trace_extractor.py` (it is less than 150 lines). It uses Abstract Syntax Tree (AST) parsing and regex heuristics to:
 
-- ✅ **EXTRACT**: Only Class names, Function names, and Function call connections.
-- ❌ **IGNORE**: Variables, hardcoded strings, business logic, passwords, API keys, loops, and conditions.
+- ✅ **EXTRACT**: Class names, Function names, Function call connections, Cyclomatic Complexity metrics, and LOC.
+- ✅ **SUPPORT**: Python (`.py`), JavaScript (`.js`, `.jsx`), and TypeScript (`.ts`, `.tsx`).
+- ❌ **IGNORE**: Variables, hardcoded strings, business logic, passwords, API keys, and database schemas.
 - ❌ **OFFLINE**: The script does not make any network requests. It saves a `.json` file locally.
 
 It’s like giving a blood test to a laboratory: we see the metrics, we never see the patient.
+
+---
+
+## 🛑 Addressing the "Linter" Objection
+
+You might ask: *"Isn't this just a very basic AST parser? SonarQube does this."*
+
+Yes, this extractor is intentionally "dumb" and incompetent. It is **not** a linter. Linters find bad code, bugs, and style violations. 
+
+**TRACE finds bad architecture.** 
+
+The true value of TRACE is not in this extraction script. This script merely creates a passive mathematical matrix. The real magic happens when you send this JSON to the proprietary **TRACE Engine (Cerebro)**, which:
+1. Translates the topology into a multidimensional graph.
+2. Applies stochastic simulations (Markov chains, PageRank derivatives) to find non-obvious choke points.
+3. Overlays your Code Topology with your Corporate Narrative (Website/Pitch Deck) to calculate the **Symmetry Gap**.
+
+This open-source tool exists exclusively to guarantee IP security, ensuring that TRACE Cerebro can audit your architecture without ever touching your intellectual property.
 
 ## 🎯 Who is this for?
 
