@@ -1,7 +1,8 @@
 <div align="center">
   <img src="./trace_logo.png" width="120" alt="TRACE Logo">
   <h1>TRACE™ Structural Extractor</h1>
-  <p><b>Zero-Trust Codebase Topology Extractor for Enterprise Audits</b></p>
+  <p><b>We mathematically align your corporate communication with your structural codebase architecture.</b></p>
+  <p><i>Zero-Trust Codebase Topology Extractor for Enterprise Audits</i></p>
 </div>
 
 ---
