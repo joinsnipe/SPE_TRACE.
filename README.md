@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/joinsnipe/SPE_TRACE/main/public/apple-touch-icon.png" width="120" alt="TRACE Logo">
+  <img src="./trace_logo.png" width="120" alt="TRACE Logo">
   <h1>TRACE™ Structural Extractor</h1>
   <p><b>Zero-Trust Codebase Topology Extractor for Enterprise Audits</b></p>
 </div>
