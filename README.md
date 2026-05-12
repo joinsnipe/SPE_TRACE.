@@ -61,6 +61,18 @@ This open-source tool exists exclusively to guarantee IP security, allowing us t
 
 ---
 
+## 🏢 Transparency & The TRACE Ecosystem
+
+If you research our organization, you might find references to our Chrome Extension ("SPE TRACE - AI Brand Intelligence") or our early corporate pivots (SNIPE, 2024). We believe in absolute transparency:
+
+**TRACE is a dual-engine forensic framework:**
+1. **The Narrative Layer (The Chrome Extension):** Analyzes how public AI models (LLMs) perceive your website and brand.
+2. **The Structural Layer (This Open-Source Extractor):** Analyzes the hidden topology of your private codebase.
+
+We do not sell a monolithic black-box software. We are an independent, EU-based forensic research group. This repository is strictly scoped to the Structural Layer extraction, ensuring your code remains on your machine.
+
+---
+
 ## ⚙️ How to use it
 
 1. **Download the script directly:**
