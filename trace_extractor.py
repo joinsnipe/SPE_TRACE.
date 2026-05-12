@@ -156,8 +156,25 @@ def run_extraction(target_dir: str, output_file: str):
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(graph, f, indent=2)
         
-    print(f"[+] Extraction complete! Scanned {stats['python']} Py files and {stats['js_ts']} JS/TS files.")
+    print(f"\n[+] Extraction complete! Scanned {stats['python']} Py files and {stats['js_ts']} JS/TS files.")
     print(f"[+] Topology saved to {output_file}")
+    
+    # Provide local value / teaser output
+    print(f"\n--- LOCAL TOPOLOGY SUMMARY ---")
+    all_funcs = []
+    for d in all_data:
+        if "metrics" in d:
+            all_funcs.append((d["file"], d["metrics"].get("complexity", 0)))
+    
+    # Sort by complexity
+    all_funcs.sort(key=lambda x: x[1], reverse=True)
+    print(f"[*] Top 3 structurally complex files detected locally:")
+    for f, c in all_funcs[:3]:
+        print(f"    - {os.path.basename(f)} (Complexity Metric: {c})")
+        
+    print(f"------------------------------")
+    print(f"[!] You may now inspect {output_file} to verify no business logic or secrets were captured.")
+    print(f"[!] Please submit {output_file} to your TRACE Structural Auditor for deep architectural analysis.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="TRACE Structural Audit - Topology Extractor")

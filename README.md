@@ -61,19 +61,9 @@ This open-source tool exists exclusively to guarantee IP security, allowing us t
 
 ---
 
-## 🏢 Transparency & The TRACE™ Ecosystem
-
-If you research our organization, you might find references to various products, Chrome extensions, or our early corporate iterations (SNIPE, 2024). We believe in absolute transparency and want to clarify exactly what you are looking at.
-
-**We do not sell a monolithic black-box software.** We are an independent, EU-based forensic research group. TRACE is a massive, multi-layered ecosystem designed to audit both the *Narrative* (how AI sees you) and the *Structure* (how you are built) of digital enterprises:
-
-1. **TRACE Suite (Enterprise Audits):** Our core consulting branch. We run deep, one-shot architectural and semantic audits for VCs and M&As.
-2. **SPE TRACE / Brand Rank (SaaS Platform):** A continuous monitoring platform that measures and tracks Semantic Positioning and LLM Perception metrics over time.
-3. **SPE Audit (Patent-Pending):** A cryptographic protocol and repository currently under patent review (US 63/930,786) for the digital certification and chain-of-custody validation of AI outputs.
-4. **SPE TRACE Chrome Extension:** A lightweight client tool for real-time narrative footprint analysis directly in the browser.
-5. **The Structural Extractor (This Repository):** The Zero-Trust, local AST mapping script.
-
-This repository (`SPE_TRACE.`) is strictly scoped to item #5. It exists so that CTOs and engineers can safely extract their structural topology for our TRACE Suite audits without ever compromising their intellectual property.
+## 🛣️ Technical Roadmap
+Currently, `trace_extractor.py` relies on the standard `ast` library for Python and regex heuristics for JS/TS. 
+In future iterations, we will migrate to **Tree-sitter** to provide robust, language-agnostic AST parsing for Go, Rust, Java, and C++.
 
 ---
 
