@@ -40,16 +40,17 @@ It’s like giving a blood test to a laboratory: we see the metrics, we never se
 
 You might ask: *"Isn't this just a very basic AST parser? SonarQube does this."*
 
-Yes, this extractor is intentionally "dumb" and incompetent. It is **not** a linter. Linters find bad code, bugs, and style violations. 
+Yes, this extractor is intentionally simple. It is **not** a linter. Linters are excellent for finding bad code, bugs, and style violations. 
 
-**TRACE finds bad architecture.** 
+**TRACE is designed to audit architecture, not code syntax.** 
 
-The true value of TRACE is not in this extraction script. This script merely creates a passive mathematical matrix. The real magic happens when you send this JSON to the proprietary **TRACE Engine (Cerebro)**, which:
-1. Translates the topology into a multidimensional graph.
-2. Applies stochastic simulations (Markov chains, PageRank derivatives) to find non-obvious choke points.
-3. Overlays your Code Topology with your Corporate Narrative (Website/Pitch Deck) to calculate the **Symmetry Gap**.
+The value of the TRACE audit is not in this extraction script. This script is simply a secure data collector. The actual analysis happens during the TRACE diagnostic process, where we take this structural JSON and map it against your organizational narrative and documentation. 
 
-This open-source tool exists exclusively to guarantee IP security, ensuring that TRACE Cerebro can audit your architecture without ever touching your intellectual property.
+We look for structural bottlenecks:
+1. **God Nodes:** Classes or functions that have become too central, creating maintenance risks.
+2. **Community Fractures:** Isolated code clusters that indicate silos in your development team or unused legacy systems.
+
+This open-source tool exists exclusively to guarantee IP security, allowing us to audit your structural topology without ever asking for access to your proprietary source code.
 
 ## 🎯 Who is this for?
 
