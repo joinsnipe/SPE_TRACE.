@@ -61,15 +61,19 @@ This open-source tool exists exclusively to guarantee IP security, allowing us t
 
 ---
 
-## 🏢 Transparency & The TRACE Ecosystem
+## 🏢 Transparency & The TRACE™ Ecosystem
 
-If you research our organization, you might find references to our Chrome Extension ("SPE TRACE - AI Brand Intelligence") or our early corporate pivots (SNIPE, 2024). We believe in absolute transparency:
+If you research our organization, you might find references to various products, Chrome extensions, or our early corporate iterations (SNIPE, 2024). We believe in absolute transparency and want to clarify exactly what you are looking at.
 
-**TRACE is a dual-engine forensic framework:**
-1. **The Narrative Layer (The Chrome Extension):** Analyzes how public AI models (LLMs) perceive your website and brand.
-2. **The Structural Layer (This Open-Source Extractor):** Analyzes the hidden topology of your private codebase.
+**We do not sell a monolithic black-box software.** We are an independent, EU-based forensic research group. TRACE is a massive, multi-layered ecosystem designed to audit both the *Narrative* (how AI sees you) and the *Structure* (how you are built) of digital enterprises:
 
-We do not sell a monolithic black-box software. We are an independent, EU-based forensic research group. This repository is strictly scoped to the Structural Layer extraction, ensuring your code remains on your machine.
+1. **TRACE Suite (Enterprise Audits):** Our core consulting branch. We run deep, one-shot architectural and semantic audits for VCs and M&As.
+2. **SPE TRACE / Brand Rank (SaaS Platform):** A continuous monitoring platform that measures and tracks Semantic Positioning and LLM Perception metrics over time.
+3. **SPE Audit (Patent-Pending):** A cryptographic protocol and repository currently under patent review (US 63/930,786) for the digital certification and chain-of-custody validation of AI outputs.
+4. **SPE TRACE Chrome Extension:** A lightweight client tool for real-time narrative footprint analysis directly in the browser.
+5. **The Structural Extractor (This Repository):** The Zero-Trust, local AST mapping script.
+
+This repository (`SPE_TRACE.`) is strictly scoped to item #5. It exists so that CTOs and engineers can safely extract their structural topology for our TRACE Suite audits without ever compromising their intellectual property.
 
 ---
 
